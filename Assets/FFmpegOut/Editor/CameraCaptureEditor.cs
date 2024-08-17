@@ -19,10 +19,18 @@ namespace FFmpegOut
         static GUIContent [] _codecLabels = {
             new GUIContent("ProRes (QuickTime)"),
             new GUIContent("H.264 (MP4)"),
-            new GUIContent("VP8 (WebM)")
+            new GUIContent("VP8 (WebM)"),
+            new GUIContent("h264_nvenc (MP4)"),
+            new GUIContent("hevc_nvenc (MP4)"),
+            new GUIContent("h264_videotoolbox (MP4)"),
+            new GUIContent("hevc_videotoolbox (MP4)"),
+            new GUIContent("UDP localhost:5000 h264_nvenc"),
+            new GUIContent("UDP localhost:5000 hevc_nvenc"),
+            new GUIContent("UDP localhost:5000 h264_videotoolbox"),
+            new GUIContent("UDP localhost:5000 hevc_videotoolbox")
         };
 
-        static int [] _codecOptions = { 0, 1, 2 };
+        static int [] _codecOptions = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
         void OnEnable()
         {

@@ -9,9 +9,9 @@ namespace FFmpegOut
         #region Editable properties
 
         [SerializeField] bool _setResolution = true;
-        [SerializeField] int _width = 1280;
-        [SerializeField] int _height = 720;
-        [SerializeField] int _frameRate = 30;
+        [SerializeField] int _width = 1920;
+        [SerializeField] int _height = 1080;
+        [SerializeField] float _frameRate = 29.97f;
         [SerializeField] bool _allowSlowDown = true;
         [SerializeField] FFmpegPipe.Codec _codec;
         [SerializeField] float _startTime = 0;
